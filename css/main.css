@@ -260,7 +260,8 @@ footer span {
 footer .social-media {
   margin-top: 40px; }
 footer i {
-  color: #27746b; }
+  color: #27746b;
+  padding: 0px 10px; }
 footer i:hover {
   color: black;
   transition: 2s color; }
@@ -326,9 +327,99 @@ footer i:hover {
     width: 60%; } }
 /* Desktop Styles */
 @media (min-width: 1200px) {
+  .content-wrapper {
+    margin: 0px 120px; }
+
   /* Hero */
   #hero p {
-    width: 60%; } }
+    width: 60%; }
+
+  /* Footer */
+  footer {
+    width: 50%; } }
+/* About Page */
+#about {
+  background: white; }
+  #about .content-wrapper {
+    padding-top: 50px; }
+  #about h1 {
+    padding-bottom: 50px;
+    text-align: center; }
+  #about span {
+    color: #27746b; }
+  #about hr {
+    border-top: 2px solid #ff8581;
+    margin: 0 auto;
+    width: 200px; }
+  #about .html {
+    background: #27746b;
+    margin: 0 auto;
+    height: 20px;
+    margin-bottom: 10px;
+    width: 200px; }
+  #about .css {
+    background: #27746b;
+    margin: 0 auto;
+    height: 20px;
+    margin-bottom: 10px;
+    border-right: 20px solid #ff8581;
+    width: 180px; }
+  #about .git {
+    background: #27746b;
+    margin: 0 auto;
+    height: 20px;
+    margin-bottom: 10px;
+    border-right: 25px solid #ff8581;
+    width: 175px; }
+  #about .sass {
+    background: #27746b;
+    margin: 0 auto;
+    height: 20px;
+    margin-bottom: 10px;
+    border-right: 35px solid #ff8581;
+    width: 165px; }
+  #about .wordpress {
+    background: #27746b;
+    margin: 0 auto;
+    height: 20px;
+    margin-bottom: 10px;
+    border-right: 45px solid #ff8581;
+    width: 155px; }
+  #about .photoshop {
+    background: #27746b;
+    margin: 0 auto;
+    height: 20px;
+    margin-bottom: 10px;
+    width: 200px; }
+  #about .illustrator {
+    background: #27746b;
+    margin: 0 auto;
+    height: 20px;
+    margin-bottom: 10px;
+    width: 200px; }
+  #about b {
+    color: #ff8581; }
+  #about .about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center; }
+    #about .about-container article {
+      padding-bottom: 50px;
+      width: 100%; }
+    #about .about-container img {
+      border: 10px solid #ff8581;
+      border-radius: 10px;
+      width: 100%; }
+    #about .about-container ul {
+      list-style-type: none;
+      padding: 0; }
+    #about .about-container li {
+      display: block;
+      margin-bottom: 5px; }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

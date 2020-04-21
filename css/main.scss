@@ -103,6 +103,7 @@ $sea-green: #27746b;
 $pink: #ff8581;
 
 $pink-border: 2px solid $pink;
+$skill-border: 10px solid $pink;
 
 /* Universal Styles */
 html {
@@ -324,6 +325,7 @@ footer {
   }
   i {
     color: $sea-green;
+    padding: 0px 10px;
   }
   i:hover {
     color: black;
@@ -412,9 +414,102 @@ footer {
 
 /* Desktop Styles */
 @media (min-width: 1200px) {
+  .content-wrapper {
+    margin: 0px 120px;
+  }
   /* Hero */
   #hero p {
     width: 60%;
+  }
+  /* Footer */
+  footer {
+    width: 50%;
+  }
+}
+
+/* About Page */
+
+#about {
+  background: white;
+  .content-wrapper {
+    padding-top: 50px;
+  }
+  h1 {
+    padding-bottom: 50px;
+    text-align: center;
+  }
+  span {
+    color: $sea-green;
+  }
+  hr {
+    border-top: $pink-border;
+    margin: 0 auto;
+    width: 200px;
+  }
+  @mixin skill-bar {
+    background: $sea-green;
+    margin: 0 auto;
+    height: 20px;
+    margin-bottom: 10px;
+  } .html {
+    @include skill-bar;
+    width: 200px;
+  }
+  .css {
+    @include skill-bar;
+    border-right: 20px solid $pink;
+    width: 180px;
+  }
+  .git {
+    @include skill-bar;
+    border-right: 25px solid $pink;
+    width: 175px;
+  }
+  .sass {
+    @include skill-bar;
+    border-right: 35px solid $pink;
+    width: 165px;
+  }
+  .wordpress {
+    @include skill-bar;
+    border-right: 45px solid $pink;
+    width: 155px;
+  }
+  .photoshop {
+    @include skill-bar;
+    width: 200px;
+  }
+  .illustrator {
+    @include skill-bar;
+    width: 200px;
+  }
+  b {
+    color: $pink;
+  }
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    article {
+      padding-bottom: 50px;
+      width: 100%;
+    }
+    img {
+      border: 10px solid $pink;
+      border-radius: 10px;
+      width: 100%;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      display: block;
+      margin-bottom: 5px;
+    }
   }
 }
 
