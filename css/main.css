@@ -374,6 +374,41 @@ footer i:hover {
   #services-page .services-page-content span {
     border-bottom: 2px solid #ff8581; }
 
+/* My Work Page */
+#my-work-page {
+  background: white; }
+  #my-work-page .content-wrapper {
+    padding-top: 50px; }
+  #my-work-page h1 {
+    padding-bottom: 50px;
+    text-align: center; }
+  #my-work-page span {
+    color: #27746b; }
+  #my-work-page hr {
+    border-top: 2px solid #ff8581;
+    margin: 0 auto;
+    width: 200px; }
+  #my-work-page .work-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center; }
+    #my-work-page .work-page-container article {
+      padding-bottom: 50px;
+      width: 100%; }
+    #my-work-page .work-page-container img {
+      border-radius: 10px;
+      width: 100%; }
+    #my-work-page .work-page-container a:link,
+    #my-work-page .work-page-container a:visited {
+      color: black;
+      font-weight: 600;
+      text-decoration: none; }
+    #my-work-page .work-page-container a:hover {
+      border-bottom: 2px solid #27746b; }
+
 /* Tablet Styles */
 @media (min-width: 768px) {
   /* Navigation */
@@ -465,7 +500,33 @@ footer i:hover {
     text-align: center; }
     #services-page .services-page-content article {
       padding-bottom: 100px;
-      width: 40%; } }
+      width: 40%; }
+
+  /* My Work Page */
+  #my-work-page .work-page-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center; }
+    #my-work-page .work-page-container article {
+      padding-bottom: 100px;
+      width: 40%; }
+    #my-work-page .work-page-container article:nth-child(1) {
+      order: 2; }
+    #my-work-page .work-page-container article:nth-child(2) {
+      order: 1; }
+    #my-work-page .work-page-container article:nth-child(3) {
+      order: 2; }
+    #my-work-page .work-page-container article:nth-child(4) {
+      order: 3; }
+    #my-work-page .work-page-container article:nth-child(5) {
+      order: 6; }
+    #my-work-page .work-page-container article:nth-child(6) {
+      order: 5; }
+    #my-work-page .work-page-container article:nth-child(7) {
+      order: 6; }
+    #my-work-page .work-page-container article:nth-child(8) {
+      order: 7; } }
 /* Desktop Styles */
 @media (min-width: 1200px) {
   .content-wrapper {
