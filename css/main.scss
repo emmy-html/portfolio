@@ -332,16 +332,16 @@ footer {
   }
 }
 
-/* Desktop Styles */
+/* Tablet Styles */
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   /* Navigation */
   header .content-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 0px;
-    width: 40%;
+    width: 50%;
     }
     nav ul {
       li {
@@ -399,6 +399,10 @@ footer {
         width: 40%;
       }
     }
+  }
+  footer {
+    margin: 0 auto;
+    width: 60%;
   }
 }
 
