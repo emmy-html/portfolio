@@ -96,17 +96,66 @@ textarea {
 
 /* Fonts & Colors */
 
+$body-font: 'Open Sans', sans-serif;
+$heading-font: 'Montserrat', sans-serif;
+
+$sea-green: #27746b;
+$pink: #ff8581;
 
 /* Main Styles */
 html {
   margin: 0;
   padding: 0;
 }
+body {
+  font-family: $body-font;
+  font-size: 16px;
+}
 .content-wrapper {
   margin: 0px 80px;
 }
+h1 {
+  font-family: $heading-font;
+  font-weight: 800;
+  text-transform: lowercase;
+}
+h2,
+h3,
+h4 {
+  font-family: $heading-font;
+  font-weight: 600;
+  text-transform: lowercase;
+}
+span {
+  color: $pink;
+}
+.button-container {
+  margin-top: 35px;
+}
+.gradient-button {
+  background: white;
+  border: 2px solid white;
+  color: $pink;
+  font-size: .75rem;
+  padding: 10px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.gradient-button:hover {
+  background: none;
+  color: white;
+  transition: 1s background, color;
+}
 /* Header */
-header .content-wrapper {
+header {
+  .logo i {
+    color: black;
+  }
+  i:hover {
+    color: $sea-green;
+    transition: 1s color;
+  }
+  .content-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -115,20 +164,51 @@ header .content-wrapper {
   }
   nav ul {
     li {
-      display: block;
       list-style-type: none;
     }
+    a {
+      color: black;
+      font-family: $body-font;
+      font-size: .75rem;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    a:hover {
+      border-bottom: 2px solid $pink;
+    }
+    a:link,
+    a:visited {
+      color: black;
+    }
+  }
 }
 /* Hero */
 #hero {
   background: url('../img/hero.png');
   background-size: cover;
-  height: 450px;
+  color: white;
   .content-wrapper {
-    padding-top: 50px;
+    padding: 50px 0px;
     width: 40%;
   }
+  h1 {
+    line-height: 100%;
+  }
+  h3 {
+    line-height: 50%;
+  }
+  h2 {
+    line-height: 100%;
+  }
+  h2 span {
+    border-bottom: 2px solid $pink;
+    color: white;
+  }
+  p {
+    text-align: justify;
+  }
 }
+
 /* My Work */
 #my-work {
   .content-wrapper {
