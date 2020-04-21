@@ -333,100 +333,6 @@ footer {
   }
 }
 
-/* Tablet Styles */
-
-@media (min-width: 768px) {
-  /* Navigation */
-  header .content-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0px;
-    }
-    nav ul {
-      li {
-        display: inline-block;
-        list-style-type: none;
-        padding-left: 10px;
-      }
-  }
-  /* Hero */
-  #hero p {
-    width: 60%;
-  }
-  /* My Portfolio */
-  #my-work {
-    .work-container {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      text-align: center;
-      article {
-        padding-bottom: 100px;
-        width: 40%;
-      }
-      article:nth-child(1) {
-        order: 2;
-      }
-      article:nth-child(2) {
-        order: 1;
-      }
-      article:nth-child(3) {
-        order: 2;
-      }
-      article:nth-child(4) {
-        order: 3;
-      }
-      article:nth-child(5) {
-        order: 6;
-      }
-      article:nth-child(6) {
-        order: 5;
-      }
-      article:nth-child(7) {
-        order: 6;
-      }
-      article:nth-child(8) {
-        order: 7;
-      }
-    }
-  }
-  /* Services */
-  #services {
-    .services-content {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      text-align: center;
-      article {
-        padding-bottom: 100px;
-        width: 40%;
-      }
-    }
-  }
-  /* Footer */
-  footer {
-    margin: 0 auto;
-    width: 60%;
-  }
-}
-
-/* Desktop Styles */
-@media (min-width: 1200px) {
-  .content-wrapper {
-    margin: 0px 120px;
-  }
-  /* Hero */
-  #hero p {
-    width: 60%;
-  }
-  /* Footer */
-  footer {
-    width: 50%;
-  }
-}
-
 /* About Page */
 
 #about {
@@ -510,6 +416,177 @@ footer {
       display: block;
       margin-bottom: 5px;
     }
+  }
+}
+
+/* Services Page */
+#services-page {
+  h1 {
+    padding-bottom: 50px;
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+  }
+  span {
+    color: $sea-green;
+  }
+  .content-wrapper {
+    padding-top: 50px;
+  }
+  .services-page-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    article {
+      padding-bottom: 100px;
+      width: 100%;
+    }
+    i {
+      color: $pink;
+      padding-bottom: 10px;
+    }
+    span {
+      border-bottom: $pink-border;
+    }
+  }
+}
+
+/* Tablet Styles */
+
+@media (min-width: 768px) {
+  /* Navigation */
+  header .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    }
+    nav ul {
+      li {
+        display: inline-block;
+        list-style-type: none;
+        padding-left: 10px;
+      }
+  }
+  /* Hero */
+  #hero p {
+    width: 60%;
+  }
+  /* My Portfolio */
+  #my-work {
+    .work-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      text-align: center;
+      article {
+        padding-bottom: 100px;
+        width: 40%;
+      }
+      article:nth-child(1) {
+        order: 2;
+      }
+      article:nth-child(2) {
+        order: 1;
+      }
+      article:nth-child(3) {
+        order: 2;
+      }
+      article:nth-child(4) {
+        order: 3;
+      }
+      article:nth-child(5) {
+        order: 6;
+      }
+      article:nth-child(6) {
+        order: 5;
+      }
+      article:nth-child(7) {
+        order: 6;
+      }
+      article:nth-child(8) {
+        order: 7;
+      }
+    }
+  }
+  /* Services */
+  #services {
+    .services-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      text-align: center;
+      article {
+        padding-bottom: 100px;
+        width: 40%;
+      }
+    }
+  }
+  /* Footer */
+  footer {
+    margin: 0 auto;
+    width: 60%;
+  }
+  /* About Page */
+  #about {
+    .about-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      text-align: center;
+      article {
+        padding-bottom: 50px;
+        width: 40%;
+      }
+      img {
+        border: 10px solid $pink;
+        border-radius: 10px;
+        width: 80%;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        display: block;
+        margin-bottom: 5px;
+      }
+    }
+  }
+  /* Services Page */
+  #services-page {
+    .services-page-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      text-align: center;
+      article {
+        padding-bottom: 100px;
+        width: 40%;
+      }
+    }
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 1200px) {
+  .content-wrapper {
+    margin: 0px 120px;
+  }
+  /* Hero */
+  #hero p {
+    width: 60%;
+  }
+  /* Footer */
+  footer {
+    width: 50%;
   }
 }
 

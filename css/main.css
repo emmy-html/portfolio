@@ -266,77 +266,6 @@ footer i:hover {
   color: black;
   transition: 2s color; }
 
-/* Tablet Styles */
-@media (min-width: 768px) {
-  /* Navigation */
-  header .content-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0px; }
-
-  nav ul li {
-    display: inline-block;
-    list-style-type: none;
-    padding-left: 10px; }
-
-  /* Hero */
-  #hero p {
-    width: 60%; }
-
-  /* My Portfolio */
-  #my-work .work-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center; }
-    #my-work .work-container article {
-      padding-bottom: 100px;
-      width: 40%; }
-    #my-work .work-container article:nth-child(1) {
-      order: 2; }
-    #my-work .work-container article:nth-child(2) {
-      order: 1; }
-    #my-work .work-container article:nth-child(3) {
-      order: 2; }
-    #my-work .work-container article:nth-child(4) {
-      order: 3; }
-    #my-work .work-container article:nth-child(5) {
-      order: 6; }
-    #my-work .work-container article:nth-child(6) {
-      order: 5; }
-    #my-work .work-container article:nth-child(7) {
-      order: 6; }
-    #my-work .work-container article:nth-child(8) {
-      order: 7; }
-
-  /* Services */
-  #services .services-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    text-align: center; }
-    #services .services-content article {
-      padding-bottom: 100px;
-      width: 40%; }
-
-  /* Footer */
-  footer {
-    margin: 0 auto;
-    width: 60%; } }
-/* Desktop Styles */
-@media (min-width: 1200px) {
-  .content-wrapper {
-    margin: 0px 120px; }
-
-  /* Hero */
-  #hero p {
-    width: 60%; }
-
-  /* Footer */
-  footer {
-    width: 50%; } }
 /* About Page */
 #about {
   background: white; }
@@ -420,6 +349,135 @@ footer i:hover {
       display: block;
       margin-bottom: 5px; }
 
+/* Services Page */
+#services-page h1 {
+  padding-bottom: 50px;
+  text-align: center; }
+#services-page h2 {
+  text-align: center; }
+#services-page span {
+  color: #27746b; }
+#services-page .content-wrapper {
+  padding-top: 50px; }
+#services-page .services-page-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center; }
+  #services-page .services-page-content article {
+    padding-bottom: 100px;
+    width: 100%; }
+  #services-page .services-page-content i {
+    color: #ff8581;
+    padding-bottom: 10px; }
+  #services-page .services-page-content span {
+    border-bottom: 2px solid #ff8581; }
+
+/* Tablet Styles */
+@media (min-width: 768px) {
+  /* Navigation */
+  header .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px; }
+
+  nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding-left: 10px; }
+
+  /* Hero */
+  #hero p {
+    width: 60%; }
+
+  /* My Portfolio */
+  #my-work .work-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center; }
+    #my-work .work-container article {
+      padding-bottom: 100px;
+      width: 40%; }
+    #my-work .work-container article:nth-child(1) {
+      order: 2; }
+    #my-work .work-container article:nth-child(2) {
+      order: 1; }
+    #my-work .work-container article:nth-child(3) {
+      order: 2; }
+    #my-work .work-container article:nth-child(4) {
+      order: 3; }
+    #my-work .work-container article:nth-child(5) {
+      order: 6; }
+    #my-work .work-container article:nth-child(6) {
+      order: 5; }
+    #my-work .work-container article:nth-child(7) {
+      order: 6; }
+    #my-work .work-container article:nth-child(8) {
+      order: 7; }
+
+  /* Services */
+  #services .services-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center; }
+    #services .services-content article {
+      padding-bottom: 100px;
+      width: 40%; }
+
+  /* Footer */
+  footer {
+    margin: 0 auto;
+    width: 60%; }
+
+  /* About Page */
+  #about .about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center; }
+    #about .about-container article {
+      padding-bottom: 50px;
+      width: 40%; }
+    #about .about-container img {
+      border: 10px solid #ff8581;
+      border-radius: 10px;
+      width: 80%; }
+    #about .about-container ul {
+      list-style-type: none;
+      padding: 0; }
+    #about .about-container li {
+      display: block;
+      margin-bottom: 5px; }
+
+  /* Services Page */
+  #services-page .services-page-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center; }
+    #services-page .services-page-content article {
+      padding-bottom: 100px;
+      width: 40%; } }
+/* Desktop Styles */
+@media (min-width: 1200px) {
+  .content-wrapper {
+    margin: 0px 120px; }
+
+  /* Hero */
+  #hero p {
+    width: 60%; }
+
+  /* Footer */
+  footer {
+    width: 50%; } }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
