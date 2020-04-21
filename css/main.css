@@ -78,14 +78,90 @@ textarea {
   padding: 0.2em 0; }
 
 /* Fonts & Colors */
-
-
 /* Main Styles */
-
 html {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
+
+.content-wrapper {
+  margin: 0px 80px; }
+
+/* Header */
+header .content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%; }
+
+nav ul li {
+  display: inline-block;
+  list-style-type: none; }
+
+/* Hero */
+#hero .content-wrapper {
+  padding-top: 50px;
+  width: 40%; }
+
+/* My Work */
+#my-work .content-wrapper {
+  padding-top: 150px; }
+#my-work h1 {
+  padding-bottom: 50px;
+  text-align: center; }
+#my-work .work-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center; }
+  #my-work .work-container article {
+    padding-bottom: 100px;
+    width: 40%; }
+  #my-work .work-container article:nth-child(1) {
+    order: 2; }
+  #my-work .work-container article:nth-child(2) {
+    order: 1; }
+  #my-work .work-container article:nth-child(3) {
+    order: 2; }
+  #my-work .work-container article:nth-child(4) {
+    order: 3; }
+  #my-work .work-container article:nth-child(5) {
+    order: 6; }
+  #my-work .work-container article:nth-child(6) {
+    order: 5; }
+  #my-work .work-container article:nth-child(7) {
+    order: 6; }
+  #my-work .work-container article:nth-child(8) {
+    order: 7; }
+
+/* Services */
+#services h1 {
+  padding-bottom: 50px;
+  text-align: center; }
+#services h2 {
+  text-align: center; }
+#services .content-wrapper {
+  padding-top: 150px; }
+#services .services-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center; }
+  #services .services-content article {
+    padding-bottom: 100px;
+    width: 40%; }
+  #services .services-content p {
+    text-align: justify; }
+
+/* Footer */
+footer {
+  padding-top: 150px;
+  text-align: center; }
+  footer .social-media {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    width: 30%; }
 
 /* ==========================================================================
    Helper classes
