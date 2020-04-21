@@ -94,13 +94,15 @@ textarea {
   padding: 0.2em 0;
 }
 
-/* Fonts & Colors */
+/* SASS Variables */
 
 $body-font: 'Open Sans', sans-serif;
 $heading-font: 'Montserrat', sans-serif;
 
 $sea-green: #27746b;
 $pink: #ff8581;
+
+$pink-border: 2px solid $pink;
 
 /* Main Styles */
 html {
@@ -132,7 +134,7 @@ span {
 .button-container {
   margin-top: 35px;
 }
-.gradient-button {
+.white-button {
   background: white;
   border: 2px solid white;
   color: $pink;
@@ -141,7 +143,7 @@ span {
   text-decoration: none;
   text-transform: uppercase;
 }
-.gradient-button:hover {
+.white-button:hover {
   background: none;
   color: white;
   transition: 1s background, color;
@@ -174,7 +176,7 @@ header {
       text-transform: uppercase;
     }
     a:hover {
-      border-bottom: 2px solid $pink;
+      border-bottom: $pink-border;
     }
     a:link,
     a:visited {
@@ -201,7 +203,7 @@ header {
     line-height: 100%;
   }
   h2 span {
-    border-bottom: 2px solid $pink;
+    border-bottom: $pink-border;
     color: white;
   }
   p {
@@ -211,12 +213,21 @@ header {
 
 /* My Work */
 #my-work {
+  background: white;
   .content-wrapper {
-    padding-top: 150px;
+    padding-top: 50px;
   }
   h1 {
     padding-bottom: 50px;
     text-align: center;
+  }
+  span {
+    color: $sea-green;
+  }
+  hr {
+    border-top: $pink-border;
+    margin: 0 auto;
+    width: 200px;
   }
   .work-container {
     display: flex;
@@ -226,13 +237,27 @@ header {
     flex-wrap: wrap;
     text-align: center;
     article {
-      padding-bottom: 100px;
+      padding-bottom: 50px;
       width: 100%;
+    }
+    img {
+      border-radius: 10px;
+      width: 100%;
+    }
+    a:link,
+    a:visited {
+      color: black;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    a:hover {
+      border-bottom: 2px solid $sea-green;
     }
   }
 }
 /* Services */
 #services {
+  background: $sea-green;
   h1 {
     padding-bottom: 50px;
     text-align: center;
@@ -241,7 +266,7 @@ header {
     text-align: center;
   }
   .content-wrapper {
-    padding-top: 150px;
+    padding-top: 50px;
   }
   .services-content {
     display: flex;
@@ -255,6 +280,17 @@ header {
     }
     p {
       text-align: justify;
+    }
+    i {
+      color: $pink;
+      padding-bottom: 10px;
+    }
+    h2 {
+      color: white;
+    }
+    span {
+      color: white;
+      border-bottom: $pink-border;
     }
   }
 }
