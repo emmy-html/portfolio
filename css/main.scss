@@ -385,9 +385,10 @@ footer {
     @include skill-bar;
     width: 200px;
   }
-  .illustrator {
+  .javascript {
     @include skill-bar;
-    width: 200px;
+    border-right: 100px solid $pink;
+    width: 100px;
   }
   b {
     color: $pink;

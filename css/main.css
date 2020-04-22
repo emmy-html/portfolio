@@ -320,12 +320,13 @@ footer i:hover {
     height: 20px;
     margin-bottom: 10px;
     width: 200px; }
-  #about .illustrator {
+  #about .javascript {
     background: #27746b;
     margin: 0 auto;
     height: 20px;
     margin-bottom: 10px;
-    width: 200px; }
+    border-right: 100px solid #ff8581;
+    width: 100px; }
   #about b {
     color: #ff8581; }
   #about .about-container {
