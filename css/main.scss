@@ -581,14 +581,14 @@ footer {
   #about {
     .about-container {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
       text-align: center;
       article {
         padding-bottom: 50px;
-        width: 40%;
+        width: 80%;
       }
       img {
         border: 10px solid $pink;
@@ -671,7 +671,20 @@ footer {
   footer {
     width: 50%;
   }
-}
+  /* About Page */
+  #about .about-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      text-align: center;
+      article {
+        padding-bottom: 50px;
+        width: 40%;
+      }
+    }
+  }
 
 /* ==========================================================================
    Helper classes

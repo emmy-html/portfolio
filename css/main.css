@@ -473,14 +473,14 @@ footer i:hover {
   /* About Page */
   #about .about-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     text-align: center; }
     #about .about-container article {
       padding-bottom: 50px;
-      width: 40%; }
+      width: 80%; }
     #about .about-container img {
       border: 10px solid #ff8581;
       border-radius: 10px;
@@ -539,7 +539,19 @@ footer i:hover {
 
   /* Footer */
   footer {
-    width: 50%; } }
+    width: 50%; }
+
+  /* About Page */
+  #about .about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center; }
+    #about .about-container article {
+      padding-bottom: 50px;
+      width: 40%; } }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
