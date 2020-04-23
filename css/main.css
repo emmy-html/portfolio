@@ -399,8 +399,11 @@ footer i:hover {
     #my-work-page .work-page-container article {
       padding-bottom: 50px;
       width: 100%; }
+      #my-work-page .work-page-container article p {
+        text-align: left; }
     #my-work-page .work-page-container img {
       border-radius: 10px;
+      padding-bottom: 10px;
       width: 100%; }
     #my-work-page .work-page-container a:link,
     #my-work-page .work-page-container a:visited {
@@ -408,6 +411,44 @@ footer i:hover {
       font-weight: 600;
       text-decoration: none; }
     #my-work-page .work-page-container a:hover {
+      border-bottom: 2px solid #27746b; }
+
+/* Case Study Page */
+#case-study-page {
+  background: white; }
+  #case-study-page .content-wrapper {
+    padding-top: 50px; }
+  #case-study-page h1 {
+    padding-bottom: 50px;
+    text-align: center; }
+  #case-study-page span {
+    color: #27746b; }
+  #case-study-page hr {
+    border-top: 2px solid #ff8581;
+    margin: 0 auto;
+    width: 200px; }
+  #case-study-page .case-study-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    text-align: center; }
+    #case-study-page .case-study-container article {
+      padding-bottom: 50px;
+      width: 100%; }
+      #case-study-page .case-study-container article p {
+        text-align: left; }
+    #case-study-page .case-study-container img {
+      border-radius: 10px;
+      padding-bottom: 50px;
+      width: 100%; }
+    #case-study-page .case-study-container a:link,
+    #case-study-page .case-study-container a:visited {
+      color: black;
+      font-weight: 600;
+      text-decoration: none; }
+    #case-study-page .case-study-container a:hover {
       border-bottom: 2px solid #27746b; }
 
 /* Tablet Styles */
@@ -527,6 +568,32 @@ footer i:hover {
     #my-work-page .work-page-container article:nth-child(7) {
       order: 6; }
     #my-work-page .work-page-container article:nth-child(8) {
+      order: 7; }
+
+  /* Case Study Page */
+  #case-study-page .case-study-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center; }
+    #case-study-page .case-study-container article {
+      padding-bottom: 100px;
+      width: 40%; }
+    #case-study-page .case-study-container article:nth-child(1) {
+      order: 2; }
+    #case-study-page .case-study-container article:nth-child(2) {
+      order: 1; }
+    #case-study-page .case-study-container article:nth-child(3) {
+      order: 2; }
+    #case-study-page .case-study-container article:nth-child(4) {
+      order: 3; }
+    #case-study-page .case-study-container article:nth-child(5) {
+      order: 6; }
+    #case-study-page .case-study-container article:nth-child(6) {
+      order: 5; }
+    #case-study-page .case-study-container article:nth-child(7) {
+      order: 6; }
+    #case-study-page .case-study-container article:nth-child(8) {
       order: 7; } }
 /* Desktop Styles */
 @media (min-width: 1200px) {
