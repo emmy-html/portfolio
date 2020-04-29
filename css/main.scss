@@ -224,7 +224,7 @@ header {
     color: white;
   }
   p {
-    text-align: justify;
+    text-align: left;
   }
 }
 
@@ -256,6 +256,9 @@ header {
     article {
       padding-bottom: 50px;
       width: 100%;
+    }
+    p {
+      text-align: justify;
     }
     img {
       border-radius: 10px;
@@ -363,29 +366,30 @@ footer {
   }
   .css {
     @include skill-bar;
-    border-right: 20px solid $pink;
-    width: 180px;
+    border-right: 30px solid $pink;
+    width: 170px;
   }
   .git {
     @include skill-bar;
-    border-right: 25px solid $pink;
-    width: 175px;
+    border-right: 50px solid $pink;
+    width: 150px;
   }
   .sass {
     @include skill-bar;
-    border-right: 35px solid $pink;
-    width: 165px;
+    border-right: 100px solid $pink;
+    width: 100px;
   }
   .wordpress {
     @include skill-bar;
-    border-right: 45px solid $pink;
-    width: 155px;
-  }
-  .photoshop {
-    @include skill-bar;
-    width: 200px;
+    border-right: 50px solid $pink;
+    width: 150px;
   }
   .javascript {
+    @include skill-bar;
+    border-right: 100px solid $pink;
+    width: 100px;
+  }
+  .jQuery {
     @include skill-bar;
     border-right: 100px solid $pink;
     width: 100px;
@@ -403,6 +407,9 @@ footer {
     article {
       padding-bottom: 50px;
       width: 100%;
+    }
+    p {
+      text-align: justify;
     }
     img {
       border: 10px solid $pink;
@@ -572,43 +579,6 @@ footer {
   #hero p {
     width: 60%;
   }
-  /* My Portfolio */
-  #my-work {
-    .work-container {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      text-align: center;
-      article {
-        padding-bottom: 100px;
-        width: 40%;
-      }
-      article:nth-child(1) {
-        order: 2;
-      }
-      article:nth-child(2) {
-        order: 1;
-      }
-      article:nth-child(3) {
-        order: 2;
-      }
-      article:nth-child(4) {
-        order: 3;
-      }
-      article:nth-child(5) {
-        order: 6;
-      }
-      article:nth-child(6) {
-        order: 5;
-      }
-      article:nth-child(7) {
-        order: 6;
-      }
-      article:nth-child(8) {
-        order: 7;
-      }
-    }
-  }
   /* Services */
   #services {
     .services-content {
@@ -656,6 +626,7 @@ footer {
       }
     }
   }
+
   /* Services Page */
   #services-page {
     .services-page-content {
@@ -755,6 +726,43 @@ footer {
   #hero p {
     width: 60%;
   }
+  /* My Work */
+  #my-work {
+    .work-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      text-align: center;
+      article {
+        padding-bottom: 100px;
+        width: 45%;
+      }
+      article:nth-child(1) {
+        order: 2;
+      }
+      article:nth-child(2) {
+        order: 1;
+      }
+      article:nth-child(3) {
+        order: 2;
+      }
+      article:nth-child(4) {
+        order: 3;
+      }
+      article:nth-child(5) {
+        order: 6;
+      }
+      article:nth-child(6) {
+        order: 5;
+      }
+      article:nth-child(7) {
+        order: 6;
+      }
+      article:nth-child(8) {
+        order: 7;
+      }
+    }
+  }
   /* Footer */
   footer {
     width: 50%;
@@ -764,12 +772,12 @@ footer {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-start;
       flex-wrap: wrap;
       text-align: center;
       article {
         padding-bottom: 50px;
-        width: 40%;
+        width: 43%;
       }
     }
   }

@@ -183,7 +183,7 @@ header {
     border-bottom: 2px solid #ff8581;
     color: white; }
   #hero p {
-    text-align: justify; }
+    text-align: left; }
 
 /* My Work */
 #my-work {
@@ -209,6 +209,8 @@ header {
     #my-work .work-container article {
       padding-bottom: 50px;
       width: 100%; }
+    #my-work .work-container p {
+      text-align: justify; }
     #my-work .work-container img {
       border-radius: 10px;
       width: 100%; }
@@ -291,36 +293,37 @@ footer i:hover {
     margin: 0 auto;
     height: 20px;
     margin-bottom: 10px;
-    border-right: 20px solid #ff8581;
-    width: 180px; }
+    border-right: 30px solid #ff8581;
+    width: 170px; }
   #about .git {
     background: #27746b;
     margin: 0 auto;
     height: 20px;
     margin-bottom: 10px;
-    border-right: 25px solid #ff8581;
-    width: 175px; }
+    border-right: 50px solid #ff8581;
+    width: 150px; }
   #about .sass {
     background: #27746b;
     margin: 0 auto;
     height: 20px;
     margin-bottom: 10px;
-    border-right: 35px solid #ff8581;
-    width: 165px; }
+    border-right: 100px solid #ff8581;
+    width: 100px; }
   #about .wordpress {
     background: #27746b;
     margin: 0 auto;
     height: 20px;
     margin-bottom: 10px;
-    border-right: 45px solid #ff8581;
-    width: 155px; }
-  #about .photoshop {
+    border-right: 50px solid #ff8581;
+    width: 150px; }
+  #about .javascript {
     background: #27746b;
     margin: 0 auto;
     height: 20px;
     margin-bottom: 10px;
-    width: 200px; }
-  #about .javascript {
+    border-right: 100px solid #ff8581;
+    width: 100px; }
+  #about .jQuery {
     background: #27746b;
     margin: 0 auto;
     height: 20px;
@@ -339,6 +342,8 @@ footer i:hover {
     #about .about-container article {
       padding-bottom: 50px;
       width: 100%; }
+    #about .about-container p {
+      text-align: justify; }
     #about .about-container img {
       border: 10px solid #ff8581;
       border-radius: 10px;
@@ -469,32 +474,6 @@ footer i:hover {
   #hero p {
     width: 60%; }
 
-  /* My Portfolio */
-  #my-work .work-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center; }
-    #my-work .work-container article {
-      padding-bottom: 100px;
-      width: 40%; }
-    #my-work .work-container article:nth-child(1) {
-      order: 2; }
-    #my-work .work-container article:nth-child(2) {
-      order: 1; }
-    #my-work .work-container article:nth-child(3) {
-      order: 2; }
-    #my-work .work-container article:nth-child(4) {
-      order: 3; }
-    #my-work .work-container article:nth-child(5) {
-      order: 6; }
-    #my-work .work-container article:nth-child(6) {
-      order: 5; }
-    #my-work .work-container article:nth-child(7) {
-      order: 6; }
-    #my-work .work-container article:nth-child(8) {
-      order: 7; }
-
   /* Services */
   #services .services-content {
     display: flex;
@@ -604,6 +583,32 @@ footer i:hover {
   #hero p {
     width: 60%; }
 
+  /* My Work */
+  #my-work .work-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center; }
+    #my-work .work-container article {
+      padding-bottom: 100px;
+      width: 45%; }
+    #my-work .work-container article:nth-child(1) {
+      order: 2; }
+    #my-work .work-container article:nth-child(2) {
+      order: 1; }
+    #my-work .work-container article:nth-child(3) {
+      order: 2; }
+    #my-work .work-container article:nth-child(4) {
+      order: 3; }
+    #my-work .work-container article:nth-child(5) {
+      order: 6; }
+    #my-work .work-container article:nth-child(6) {
+      order: 5; }
+    #my-work .work-container article:nth-child(7) {
+      order: 6; }
+    #my-work .work-container article:nth-child(8) {
+      order: 7; }
+
   /* Footer */
   footer {
     width: 50%; }
@@ -613,12 +618,12 @@ footer i:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     text-align: center; }
     #about .about-container article {
       padding-bottom: 50px;
-      width: 40%; } }
+      width: 43%; } }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
