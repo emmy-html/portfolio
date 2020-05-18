@@ -278,6 +278,8 @@ footer i:hover {
     text-align: center; }
   #about span {
     color: #27746b; }
+  #about h2 {
+    text-align: center; }
   #about hr {
     border-top: 2px solid #ff8581;
     margin: 0 auto;
