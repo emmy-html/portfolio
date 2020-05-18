@@ -132,6 +132,16 @@ h4 {
 span {
   color: $pink;
 }
+a,
+a:link,
+a:visited {
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+}
+a:hover {
+  border-bottom: 2px solid $sea-green;
+}
 /* Buttons*/
 .button-container {
   margin-top: 35px;
