@@ -105,16 +105,6 @@ h4 {
 span {
   color: #ff8581; }
 
-a,
-a:link,
-a:visited {
-  color: black;
-  font-weight: 600;
-  text-decoration: none; }
-
-a:hover {
-  border-bottom: 2px solid #27746b; }
-
 /* Buttons*/
 .button-container {
   margin-top: 35px; }
@@ -366,6 +356,14 @@ footer i:hover {
     #about .about-container li {
       display: block;
       margin-bottom: 5px; }
+    #about .about-container a,
+    #about .about-container a:link,
+    #about .about-container a:visited {
+      color: black;
+      font-weight: 600;
+      text-decoration: none; }
+    #about .about-container a:hover {
+      border-bottom: 2px solid #27746b; }
 
 /* Services Page */
 #services-page h1 {
