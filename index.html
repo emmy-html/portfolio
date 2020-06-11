@@ -47,6 +47,26 @@
     <section id="my-work">
       <div class="content-wrapper">
         <h1>My <span>Work</span></h1>
+        <!-- Tab links -->
+        <div class="tab">
+          <button class="tab-links" onclick="openCity(event, 'html-projects')" id="default-tab">HTML & CSS</button>
+          <button class="tab-links" onclick="openCity(event, 'js-projects')">JavaScript</button>
+          <button class="tab-links" onclick="openCity(event, 'wp-projects')">WordPress</button>
+        </div>
+        <!-- Tab content -->
+        <div id="html-projects" class="tab-content">
+          <h3>HTML & CSS Projects</h3>
+          <p>Slideshow of my projects</p>
+        </div>
+        <div id="js-projects" class="tab-content">
+          <h3>JavaScript Projects</h3>
+          <p>Slideshow of my projects</p>
+        </div>
+        <div id="wp-projects" class="tab-content">
+          <h3>WordPress Projects</h3>
+          <p>Slidwshow of my projects</p>
+        </div>
+        <br><Br>
           <div class="work-container">
             <article>
               <a href="http://accelerate-marketing.studioemery.com/" target="_blank"><img src="./img/accelerate.png" alt="Accelerate Marketing Website Screenshot" /></a>
@@ -124,7 +144,6 @@
         </div>
     </div>
   </footer>
-
-
+  <script src="js/main.js"></script>
 </body>
 </html>

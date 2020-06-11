@@ -11,572 +11,171 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-}
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
-}
-
-/* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
-
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
-
-/* SASS Variables */
-
-$body-font: 'Open Sans', sans-serif;
-$heading-font: 'Montserrat', sans-serif;
-
-$sea-green: #27746b;
-$pink: #ff8581;
-
-$pink-border: 2px solid $pink;
-$skill-border: 10px solid $pink;
-
-/* Universal Styles */
-html {
-  margin: 0;
-  padding: 0;
-}
-body {
-  font-family: $body-font;
-  font-size: 16px;
-}
-.content-wrapper {
-  margin: 0px 80px;
-}
-h1 {
-  font-family: $heading-font;
-  font-weight: 800;
-  text-transform: lowercase;
-}
-h2,
-h3,
-h4 {
-  font-family: $heading-font;
-  font-weight: 600;
-  text-transform: lowercase;
-}
-span {
-  color: $pink;
-}
-/* Buttons*/
-.button-container {
-  margin-top: 35px;
-}
-.white-button {
-  background: white;
-  border: 2px solid white;
-  color: $pink;
-  font-size: .75rem;
-  padding: 10px 25px;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-.white-button:hover {
-  background: none;
-  color: white;
-  transition: 1s background, color;
-}
-.pink-button {
-  background: $pink;
-  border: 2px solid $pink;
-  color: white;
-  font-size: .75rem;
-  padding: 10px 25px;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-.pink-button:hover {
-  background: white;
-  border: 2px solid $pink;
-  color: $pink;
-  transition: 1s background, color;
-}
-/* Header */
-header {
-  background: $sea-green;
-  .logo i {
-    color: white;
+   html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
   }
-  i:hover {
+  
+  /*
+   * Remove text-shadow in selection highlight:
+   * https://twitter.com/miketaylr/status/12228805301
+   *
+   * Vendor-prefixed and regular ::selection selectors cannot be combined:
+   * https://stackoverflow.com/a/16982510/7133471
+   *
+   * Customize the background color to match your design.
+   */
+  
+  ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  
+  ::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  
+  /*
+   * A better looking default horizontal rule
+   */
+  
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+  }
+  
+  /*
+   * Remove the gap between audio, canvas, iframes,
+   * images, videos and the bottom of their containers:
+   * https://github.com/h5bp/html5-boilerplate/issues/440
+   */
+  
+  audio,
+  canvas,
+  iframe,
+  img,
+  svg,
+  video {
+    vertical-align: middle;
+  }
+  
+  /*
+   * Remove default fieldset styles.
+   */
+  
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*
+   * Allow only vertical resizing of textareas.
+   */
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  /* ==========================================================================
+     Browser Upgrade Prompt
+     ========================================================================== */
+  
+  .browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+  }
+  
+  /* SASS Variables */
+  
+  $body-font: 'Open Sans', sans-serif;
+  $heading-font: 'Montserrat', sans-serif;
+  
+  $sea-green: #27746b;
+  $pink: #ff8581;
+  
+  $pink-border: 2px solid $pink;
+  $skill-border: 10px solid $pink;
+  
+  /* Universal Styles */
+  html {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: $body-font;
+    font-size: 16px;
+  }
+  .content-wrapper {
+    margin: 0px 80px;
+  }
+  h1 {
+    font-family: $heading-font;
+    font-weight: 800;
+    text-transform: lowercase;
+  }
+  h2,
+  h3,
+  h4 {
+    font-family: $heading-font;
+    font-weight: 600;
+    text-transform: lowercase;
+  }
+  span {
     color: $pink;
-    transition: 1s color;
   }
-  .content-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0px;
+  /* Buttons*/
+  .button-container {
+    margin-top: 35px;
   }
-  nav ul {
-    li {
-      list-style-type: none;
-    }
-    a {
-      color: black;
-      font-family: $body-font;
-      font-size: .75rem;
-      text-decoration: none;
-      text-transform: uppercase;
-    }
-    a:hover {
-      border-bottom: $pink-border;
-    }
-    a:link,
-    a:visited {
-      color: black;
-    }
+  .white-button {
+    background: white;
+    border: 2px solid white;
+    color: $pink;
+    font-size: .75rem;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
   }
-}
-/* Hero */
-#hero {
-  background: url('../img/hero.png');
-  background-size: cover;
-  color: white;
-  .content-wrapper {
-    padding: 50px 0px;
-    width: 40%;
-  }
-  h1 {
-    line-height: 100%;
-  }
-  h3 {
-    line-height: 50%;
-  }
-  h2 {
-    line-height: 100%;
-  }
-  h2 span {
-    border-bottom: $pink-border;
+  .white-button:hover {
+    background: none;
     color: white;
+    transition: 1s background, color;
   }
-  p {
-    text-align: left;
+  .pink-button {
+    background: $pink;
+    border: 2px solid $pink;
+    color: white;
+    font-size: .75rem;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
   }
-}
-
-/* My Work */
-#my-work {
-  background: white;
-  .content-wrapper {
-    padding-top: 50px;
+  .pink-button:hover {
+    background: white;
+    border: 2px solid $pink;
+    color: $pink;
+    transition: 1s background, color;
   }
-  h1 {
-    padding-bottom: 50px;
-    text-align: center;
-  }
-  span {
-    color: $sea-green;
-  }
-  hr {
-    border-top: $pink-border;
-    margin: 0 auto;
-    width: 200px;
-  }
-  .work-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    text-align: center;
-    article {
-      padding-bottom: 50px;
-      width: 100%;
-    }
-    p {
-      text-align: justify;
-    }
-    img {
-      border-radius: 10px;
-      width: 100%;
-    }
-    a:link,
-    a:visited {
-      color: black;
-      font-weight: 600;
-      text-decoration: none;
-    }
-    a:hover {
-      border-bottom: 2px solid $sea-green;
-    }
-  }
-}
-/* Services */
-#services {
-  background: $sea-green;
-  h1 {
-    padding-bottom: 50px;
-    text-align: center;
-  }
-  h2 {
-    text-align: center;
-  }
-  .content-wrapper {
-    padding-top: 50px;
-  }
-  .services-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    text-align: center;
-    article {
-      padding-bottom: 100px;
-      width: 100%;
-    }
-    i {
-      color: $pink;
-      padding-bottom: 10px;
-    }
-    span {
-      color: white;
-      border-bottom: $pink-border;
-    }
-  }
-}
-/* Footer */
-footer {
-  .content-wrapper {
-    padding: 50px 0px;
-    text-align: center;
-  }
-  .social-media {
-    display: flex;
-    margin: 0 auto;
-    justify-content: space-around;
-    width: 30%;
-  }
-  span {
-    color: $sea-green;
-  }
-  .social-media {
-    margin-top: 40px;
-  }
-  i {
-    color: $sea-green;
-    padding: 0px 10px;
-  }
-  i:hover {
-    color: black;
-    transition: 2s color;
-  }
-}
-
-/* About Page */
-
-#about {
-  background: white;
-  .content-wrapper {
-    padding-top: 50px;
-  }
-  h1 {
-    padding-bottom: 50px;
-    text-align: center;
-  }
-  span {
-    color: $sea-green;
-  }
-  h2 {
-    text-align: center;
-  }
-  hr {
-    border-top: $pink-border;
-    margin: 0 auto;
-    width: 200px;
-  }
-  @mixin skill-bar {
+  /* Header */
+  header {
     background: $sea-green;
-    margin: 0 auto;
-    height: 20px;
-    margin-bottom: 10px;
-  } .html {
-    @include skill-bar;
-    width: 200px;
-  }
-  .css {
-    @include skill-bar;
-    border-right: 30px solid $pink;
-    width: 170px;
-  }
-  .git {
-    @include skill-bar;
-    border-right: 50px solid $pink;
-    width: 150px;
-  }
-  .sass {
-    @include skill-bar;
-    border-right: 100px solid $pink;
-    width: 100px;
-  }
-  .wordpress {
-    @include skill-bar;
-    border-right: 50px solid $pink;
-    width: 150px;
-  }
-  .javascript {
-    @include skill-bar;
-    border-right: 100px solid $pink;
-    width: 100px;
-  }
-  .jQuery {
-    @include skill-bar;
-    border-right: 100px solid $pink;
-    width: 100px;
-  }
-  b {
-    color: $pink;
-  }
-  .about-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    text-align: center;
-    article {
-      padding-bottom: 50px;
-      width: 100%;
+    .logo i {
+      color: white;
     }
-    p {
-      text-align: justify;
-    }
-    img {
-      border: 10px solid $pink;
-      border-radius: 10px;
-      width: 100%;
-    }
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    li {
-      display: block;
-      margin-bottom: 5px;
-    }
-
-    a,
-    a:link,
-    a:visited {
-      color: black;
-      font-weight: 600;
-      text-decoration: none;
-    }
-    a:hover {
-      border-bottom: 2px solid $sea-green;
-    }
-  }
-}
-
-/* Services Page */
-#services-page {
-  h1 {
-    padding-bottom: 50px;
-    text-align: center;
-  }
-  h2 {
-    text-align: center;
-  }
-  span {
-    color: $sea-green;
-  }
-  .content-wrapper {
-    padding-top: 50px;
-  }
-  .services-page-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    text-align: center;
-    article {
-      padding-bottom: 100px;
-      width: 100%;
-    }
-    i {
+    i:hover {
       color: $pink;
-      padding-bottom: 10px;
+      transition: 1s color;
     }
-    span {
-      border-bottom: $pink-border;
-    }
-  }
-}
-/* My Work Page */
-#my-work-page {
-  background: white;
-  .content-wrapper {
-    padding-top: 50px;
-  }
-  h1 {
-    padding-bottom: 50px;
-    text-align: center;
-  }
-  span {
-    color: $sea-green;
-  }
-  hr {
-    border-top: $pink-border;
-    margin: 0 auto;
-    width: 200px;
-  }
-  .work-page-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    text-align: center;
-    article {
-      padding-bottom: 50px;
-      width: 100%;
-      p {
-        text-align: left;
-      }
-    }
-    img {
-      border-radius: 10px;
-      padding-bottom: 10px;
-      width: 100%;
-    }
-    a:link,
-    a:visited {
-      color: black;
-      font-weight: 600;
-      text-decoration: none;
-    }
-    a:hover {
-      border-bottom: 2px solid $sea-green;
-    }
-  }
-}
-
-/* Case Study Page */
-#case-study-page {
-  background: white;
-  .content-wrapper {
-    padding-top: 50px;
-  }
-  h1 {
-    padding-bottom: 50px;
-    text-align: center;
-  }
-  span {
-    color: $sea-green;
-  }
-  hr {
-    border-top: $pink-border;
-    margin: 0 auto;
-    width: 200px;
-  }
-  .case-study-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    text-align: center;
-    article {
-      padding-bottom: 50px;
-      width: 100%;
-      p {
-        text-align: left;
-      }
-    }
-    img {
-      border-radius: 10px;
-      padding-bottom: 50px;
-      width: 100%;
-    }
-    a:link,
-    a:visited {
-      color: black;
-      font-weight: 600;
-      text-decoration: none;
-    }
-    a:hover {
-      border-bottom: 2px solid $sea-green;
-    }
-  }
-}
-/* Tablet Styles */
-
-@media (min-width: 768px) {
-  /* Navigation */
-  header .content-wrapper {
+    .content-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -584,36 +183,253 @@ footer {
     }
     nav ul {
       li {
-        display: inline-block;
         list-style-type: none;
-        padding-left: 10px;
       }
+      a {
+        color: black;
+        font-family: $body-font;
+        font-size: .75rem;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+      a:hover {
+        border-bottom: $pink-border;
+      }
+      a:link,
+      a:visited {
+        color: black;
+      }
+    }
   }
   /* Hero */
-  #hero p {
-    width: 60%;
+  #hero {
+    background: url('../img/hero.png');
+    background-size: cover;
+    color: white;
+    .content-wrapper {
+      padding: 50px 0px;
+      width: 40%;
+    }
+    h1 {
+      line-height: 100%;
+    }
+    h3 {
+      line-height: 50%;
+    }
+    h2 {
+      line-height: 100%;
+    }
+    h2 span {
+      border-bottom: $pink-border;
+      color: white;
+    }
+    p {
+      text-align: left;
+    }
+  }
+  
+  /* My Work */
+   /* Tab Feature */
+    /* The Tab */
+    .tab {
+      overflow: hidden;
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+    }
+    /* The buttons */
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      &:hover {
+        background-color: #ddd;
+      }
+      &.active {
+        background: red;
+      }
+    }
+    /* Content inside the tab */ 
+    .tab-content {
+      display: none;
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-top: none;
+    }
+  #my-work {
+    background: white;
+    .content-wrapper {
+      padding-top: 50px;
+    }
+    h1 {
+      padding-bottom: 50px;
+      text-align: center;
+    }
+    span {
+      color: $sea-green;
+    }
+    hr {
+      border-top: $pink-border;
+      margin: 0 auto;
+      width: 200px;
+    }
+    .work-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      text-align: center;
+      article {
+        padding-bottom: 50px;
+        width: 100%;
+      }
+      p {
+        text-align: justify;
+      }
+      img {
+        border-radius: 10px;
+        width: 100%;
+      }
+      a:link,
+      a:visited {
+        color: black;
+        font-weight: 600;
+        text-decoration: none;
+      }
+      a:hover {
+        border-bottom: 2px solid $sea-green;
+      }
+    }
   }
   /* Services */
   #services {
+    background: $sea-green;
+    h1 {
+      padding-bottom: 50px;
+      text-align: center;
+    }
+    h2 {
+      text-align: center;
+    }
+    .content-wrapper {
+      padding-top: 50px;
+    }
     .services-content {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: space-between;
       flex-wrap: wrap;
       text-align: center;
       article {
         padding-bottom: 100px;
-        width: 40%;
+        width: 100%;
+      }
+      i {
+        color: $pink;
+        padding-bottom: 10px;
+      }
+      span {
+        color: white;
+        border-bottom: $pink-border;
       }
     }
   }
   /* Footer */
   footer {
-    margin: 0 auto;
-    width: 60%;
+    .content-wrapper {
+      padding: 50px 0px;
+      text-align: center;
+    }
+    .social-media {
+      display: flex;
+      margin: 0 auto;
+      justify-content: space-around;
+      width: 30%;
+    }
+    span {
+      color: $sea-green;
+    }
+    .social-media {
+      margin-top: 40px;
+    }
+    i {
+      color: $sea-green;
+      padding: 0px 10px;
+    }
+    i:hover {
+      color: black;
+      transition: 2s color;
+    }
   }
+  
   /* About Page */
+  
   #about {
+    background: white;
+    .content-wrapper {
+      padding-top: 50px;
+    }
+    h1 {
+      padding-bottom: 50px;
+      text-align: center;
+    }
+    span {
+      color: $sea-green;
+    }
+    h2 {
+      text-align: center;
+    }
+    hr {
+      border-top: $pink-border;
+      margin: 0 auto;
+      width: 200px;
+    }
+    @mixin skill-bar {
+      background: $sea-green;
+      margin: 0 auto;
+      height: 20px;
+      margin-bottom: 10px;
+    } .html {
+      @include skill-bar;
+      width: 200px;
+    }
+    .css {
+      @include skill-bar;
+      border-right: 30px solid $pink;
+      width: 170px;
+    }
+    .git {
+      @include skill-bar;
+      border-right: 50px solid $pink;
+      width: 150px;
+    }
+    .sass {
+      @include skill-bar;
+      border-right: 100px solid $pink;
+      width: 100px;
+    }
+    .wordpress {
+      @include skill-bar;
+      border-right: 50px solid $pink;
+      width: 150px;
+    }
+    .javascript {
+      @include skill-bar;
+      border-right: 100px solid $pink;
+      width: 100px;
+    }
+    .jQuery {
+      @include skill-bar;
+      border-right: 100px solid $pink;
+      width: 100px;
+    }
+    b {
+      color: $pink;
+    }
     .about-container {
       display: flex;
       flex-direction: column;
@@ -623,12 +439,15 @@ footer {
       text-align: center;
       article {
         padding-bottom: 50px;
-        width: 80%;
+        width: 100%;
+      }
+      p {
+        text-align: justify;
       }
       img {
         border: 10px solid $pink;
         border-radius: 10px;
-        width: 80%;
+        width: 100%;
       }
       ul {
         list-style-type: none;
@@ -638,325 +457,537 @@ footer {
         display: block;
         margin-bottom: 5px;
       }
+  
+      a,
+      a:link,
+      a:visited {
+        color: black;
+        font-weight: 600;
+        text-decoration: none;
+      }
+      a:hover {
+        border-bottom: 2px solid $sea-green;
+      }
     }
   }
-
+  
   /* Services Page */
   #services-page {
+    h1 {
+      padding-bottom: 50px;
+      text-align: center;
+    }
+    h2 {
+      text-align: center;
+    }
+    span {
+      color: $sea-green;
+    }
+    .content-wrapper {
+      padding-top: 50px;
+    }
     .services-page-content {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: space-between;
       flex-wrap: wrap;
       text-align: center;
       article {
         padding-bottom: 100px;
-        width: 40%;
+        width: 100%;
+      }
+      i {
+        color: $pink;
+        padding-bottom: 10px;
+      }
+      span {
+        border-bottom: $pink-border;
       }
     }
   }
   /* My Work Page */
   #my-work-page {
+    background: white;
+    .content-wrapper {
+      padding-top: 50px;
+    }
+    h1 {
+      padding-bottom: 50px;
+      text-align: center;
+    }
+    span {
+      color: $sea-green;
+    }
+    hr {
+      border-top: $pink-border;
+      margin: 0 auto;
+      width: 200px;
+    }
     .work-page-container {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
       flex-wrap: wrap;
       text-align: center;
       article {
-        padding-bottom: 100px;
-        width: 40%;
+        padding-bottom: 50px;
+        width: 100%;
+        p {
+          text-align: left;
+        }
       }
-      article:nth-child(1) {
-        order: 2;
+      img {
+        border-radius: 10px;
+        padding-bottom: 10px;
+        width: 100%;
       }
-      article:nth-child(2) {
-        order: 1;
+      a:link,
+      a:visited {
+        color: black;
+        font-weight: 600;
+        text-decoration: none;
       }
-      article:nth-child(3) {
-        order: 2;
-      }
-      article:nth-child(4) {
-        order: 3;
-      }
-      article:nth-child(5) {
-        order: 6;
-      }
-      article:nth-child(6) {
-        order: 5;
-      }
-      article:nth-child(7) {
-        order: 6;
-      }
-      article:nth-child(8) {
-        order: 7;
+      a:hover {
+        border-bottom: 2px solid $sea-green;
       }
     }
   }
+  
   /* Case Study Page */
   #case-study-page {
+    background: white;
+    .content-wrapper {
+      padding-top: 50px;
+    }
+    h1 {
+      padding-bottom: 50px;
+      text-align: center;
+    }
+    span {
+      color: $sea-green;
+    }
+    hr {
+      border-top: $pink-border;
+      margin: 0 auto;
+      width: 200px;
+    }
     .case-study-container {
       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      text-align: center;
-      article {
-        padding-bottom: 100px;
-        width: 40%;
-      }
-      article:nth-child(1) {
-        order: 2;
-      }
-      article:nth-child(2) {
-        order: 1;
-      }
-      article:nth-child(3) {
-        order: 2;
-      }
-      article:nth-child(4) {
-        order: 3;
-      }
-      article:nth-child(5) {
-        order: 6;
-      }
-      article:nth-child(6) {
-        order: 5;
-      }
-      article:nth-child(7) {
-        order: 6;
-      }
-      article:nth-child(8) {
-        order: 7;
-      }
-    }
-  }
-}
-
-/* Desktop Styles */
-@media (min-width: 1200px) {
-  .content-wrapper {
-    margin: 0px 120px;
-  }
-  /* Hero */
-  #hero p {
-    width: 60%;
-  }
-  /* My Work */
-  #my-work {
-    .work-container {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      text-align: center;
-      article {
-        padding-bottom: 100px;
-        width: 45%;
-      }
-      article:nth-child(1) {
-        order: 2;
-      }
-      article:nth-child(2) {
-        order: 1;
-      }
-      article:nth-child(3) {
-        order: 2;
-      }
-      article:nth-child(4) {
-        order: 3;
-      }
-      article:nth-child(5) {
-        order: 6;
-      }
-      article:nth-child(6) {
-        order: 5;
-      }
-      article:nth-child(7) {
-        order: 6;
-      }
-      article:nth-child(8) {
-        order: 7;
-      }
-    }
-  }
-  /* Footer */
-  footer {
-    width: 50%;
-  }
-  /* About Page */
-  #about .about-container {
-      display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: space-between;
       align-items: flex-start;
       flex-wrap: wrap;
       text-align: center;
       article {
         padding-bottom: 50px;
-        width: 43%;
+        width: 100%;
+        p {
+          text-align: left;
+        }
+      }
+      img {
+        border-radius: 10px;
+        padding-bottom: 50px;
+        width: 100%;
+      }
+      a:link,
+      a:visited {
+        color: black;
+        font-weight: 600;
+        text-decoration: none;
+      }
+      a:hover {
+        border-bottom: 2px solid $sea-green;
       }
     }
   }
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden {
-  display: none !important;
-}
-
-/*
-* Hide only visually, but have it available for screen readers:
-* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
-*
-* 1. For long content, line feeds are not interpreted as spaces and small width
-*    causes content to wrap 1 word per line:
-*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
-*/
-
-.sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
-}
-
-/*
-* Extends the .sr-only class to allow the element
-* to be focusable when navigated to via the keyboard:
-* https://www.drupal.org/node/897638
-*/
-
-.sr-only.focusable:active,
-.sr-only.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
-}
-
-/*
-* Hide visually and from screen readers, but maintain layout
-*/
-
-.invisible {
-  visibility: hidden;
-}
-
-/*
-* Clearfix: contain floats
-*
-* For modern browsers
-* 1. The space content is one way to avoid an Opera bug when the
-*    `contenteditable` attribute is included anywhere else in the document.
-*    Otherwise it causes space to appear at the top and bottom of elements
-*    that receive the `clearfix` class.
-* 2. The use of `table` rather than `block` is only necessary if using
-*    `:before` to contain the top-margins of child elements.
-*/
-
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
-}
-
-.clearfix:after {
-  clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-  *,
-  *:before,
-  *:after {
-    background: transparent !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
+  /* Tablet Styles */
+  
+  @media (min-width: 768px) {
+    /* Navigation */
+    header .content-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0px;
+      }
+      nav ul {
+        li {
+          display: inline-block;
+          list-style-type: none;
+          padding-left: 10px;
+        }
+    }
+    /* Hero */
+    #hero p {
+      width: 60%;
+    }
+    /* Services */
+    #services {
+      .services-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        text-align: center;
+        article {
+          padding-bottom: 100px;
+          width: 40%;
+        }
+      }
+    }
+    /* Footer */
+    footer {
+      margin: 0 auto;
+      width: 60%;
+    }
+    /* About Page */
+    #about {
+      .about-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+        article {
+          padding-bottom: 50px;
+          width: 80%;
+        }
+        img {
+          border: 10px solid $pink;
+          border-radius: 10px;
+          width: 80%;
+        }
+        ul {
+          list-style-type: none;
+          padding: 0;
+        }
+        li {
+          display: block;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  
+    /* Services Page */
+    #services-page {
+      .services-page-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        text-align: center;
+        article {
+          padding-bottom: 100px;
+          width: 40%;
+        }
+      }
+    }
+    /* My Work Page */
+    #my-work-page {
+      .work-page-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+        article {
+          padding-bottom: 100px;
+          width: 40%;
+        }
+        article:nth-child(1) {
+          order: 2;
+        }
+        article:nth-child(2) {
+          order: 1;
+        }
+        article:nth-child(3) {
+          order: 2;
+        }
+        article:nth-child(4) {
+          order: 3;
+        }
+        article:nth-child(5) {
+          order: 6;
+        }
+        article:nth-child(6) {
+          order: 5;
+        }
+        article:nth-child(7) {
+          order: 6;
+        }
+        article:nth-child(8) {
+          order: 7;
+        }
+      }
+    }
+    /* Case Study Page */
+    #case-study-page {
+      .case-study-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+        article {
+          padding-bottom: 100px;
+          width: 40%;
+        }
+        article:nth-child(1) {
+          order: 2;
+        }
+        article:nth-child(2) {
+          order: 1;
+        }
+        article:nth-child(3) {
+          order: 2;
+        }
+        article:nth-child(4) {
+          order: 3;
+        }
+        article:nth-child(5) {
+          order: 6;
+        }
+        article:nth-child(6) {
+          order: 5;
+        }
+        article:nth-child(7) {
+          order: 6;
+        }
+        article:nth-child(8) {
+          order: 7;
+        }
+      }
+    }
   }
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
+  
+  /* Desktop Styles */
+  @media (min-width: 1200px) {
+    .content-wrapper {
+      margin: 0px 120px;
+    }
+    /* Hero */
+    #hero p {
+      width: 60%;
+    }
+    /* My Work */
+    #my-work {
+      .work-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+        article {
+          padding-bottom: 100px;
+          width: 45%;
+        }
+        article:nth-child(1) {
+          order: 2;
+        }
+        article:nth-child(2) {
+          order: 1;
+        }
+        article:nth-child(3) {
+          order: 2;
+        }
+        article:nth-child(4) {
+          order: 3;
+        }
+        article:nth-child(5) {
+          order: 6;
+        }
+        article:nth-child(6) {
+          order: 5;
+        }
+        article:nth-child(7) {
+          order: 6;
+        }
+        article:nth-child(8) {
+          order: 7;
+        }
+      }
+    }
+    /* Footer */
+    footer {
+      width: 50%;
+    }
+    /* About Page */
+    #about .about-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        text-align: center;
+        article {
+          padding-bottom: 50px;
+          width: 43%;
+        }
+      }
+    }
+  
+  /* ==========================================================================
+     Helper classes
+     ========================================================================== */
+  
   /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
-    content: "";
+   * Hide visually and from screen readers
+   */
+  
+  .hidden {
+    display: none !important;
   }
-  pre {
-    white-space: pre-wrap !important;
-  }
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
+  
   /*
-     * Printing Tables:
-     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
-  thead {
-    display: table-header-group;
+  * Hide only visually, but have it available for screen readers:
+  * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+  *
+  * 1. For long content, line feeds are not interpreted as spaces and small width
+  *    causes content to wrap 1 word per line:
+  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+  */
+  
+  .sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    /* 1 */
   }
-  tr,
-  img {
-    page-break-inside: avoid;
+  
+  /*
+  * Extends the .sr-only class to allow the element
+  * to be focusable when navigated to via the keyboard:
+  * https://www.drupal.org/node/897638
+  */
+  
+  .sr-only.focusable:active,
+  .sr-only.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
   }
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
+  
+  /*
+  * Hide visually and from screen readers, but maintain layout
+  */
+  
+  .invisible {
+    visibility: hidden;
   }
-  h2,
-  h3 {
-    page-break-after: avoid;
+  
+  /*
+  * Clearfix: contain floats
+  *
+  * For modern browsers
+  * 1. The space content is one way to avoid an Opera bug when the
+  *    `contenteditable` attribute is included anywhere else in the document.
+  *    Otherwise it causes space to appear at the top and bottom of elements
+  *    that receive the `clearfix` class.
+  * 2. The use of `table` rather than `block` is only necessary if using
+  *    `:before` to contain the top-margins of child elements.
+  */
+  
+  .clearfix:before,
+  .clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
   }
-}
+  
+  .clearfix:after {
+    clear: both;
+  }
+  
+  /* ==========================================================================
+     EXAMPLE Media Queries for Responsive Design.
+     These examples override the primary ('mobile first') styles.
+     Modify as content requires.
+     ========================================================================== */
+  
+  @media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+  }
+  
+  @media print,
+    (-webkit-min-device-pixel-ratio: 1.25),
+    (min-resolution: 1.25dppx),
+    (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+  }
+  
+  /* ==========================================================================
+     Print styles.
+     Inlined to avoid the additional HTTP request:
+     https://www.phpied.com/delay-loading-your-print-css/
+     ========================================================================== */
+  
+  @media print {
+    *,
+    *:before,
+    *:after {
+      background: transparent !important;
+      color: #000 !important;
+      /* Black prints faster */
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
+    a,
+    a:visited {
+      text-decoration: underline;
+    }
+    a[href]:after {
+      content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+      content: " (" attr(title) ")";
+    }
+    /*
+       * Don't show links that are fragment identifiers,
+       * or use the `javascript:` pseudo protocol
+       */
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+      content: "";
+    }
+    pre {
+      white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+    }
+    /*
+       * Printing Tables:
+       * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+       */
+    thead {
+      display: table-header-group;
+    }
+    tr,
+    img {
+      page-break-inside: avoid;
+    }
+    p,
+    h2,
+    h3 {
+      orphans: 3;
+      widows: 3;
+    }
+    h2,
+    h3 {
+      page-break-after: avoid;
+    }
+  }
+  

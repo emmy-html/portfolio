@@ -186,6 +186,34 @@ header {
     text-align: left; }
 
 /* My Work */
+/* Tab Feature */
+/* The Tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1; }
+
+/* The buttons */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s; }
+  .tab button:hover {
+    background-color: #ddd; }
+  .tab button.active {
+    background: red; }
+
+/* Content inside the tab */
+.tab-content {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none; }
+
 #my-work {
   background: white; }
   #my-work .content-wrapper {
