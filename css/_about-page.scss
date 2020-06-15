@@ -1,0 +1,134 @@
+/* About Page */
+#about {
+  background: white;
+  .content-wrapper {
+    padding-top: 50px;
+  }
+  h1 {
+    padding-bottom: 50px;
+    text-align: center;
+  }
+  span {
+    color: $sea-green;
+  }
+  h2 {
+    text-align: center;
+  }
+  hr {
+    border-top: $pink-border;
+    margin: 0 auto;
+    width: 200px;
+  }
+  @mixin skill-bar {
+    background: $sea-green;
+    margin: 0 auto;
+    height: 20px;
+    margin-bottom: 10px;
+  }
+  .html {
+    @include skill-bar;
+    width: 200px;
+  }
+  .css {
+    @include skill-bar;
+    border-right: 30px solid $pink;
+    width: 170px;
+  }
+  .git {
+    @include skill-bar;
+    border-right: 50px solid $pink;
+    width: 150px;
+  }
+  .sass {
+    @include skill-bar;
+    border-right: 100px solid $pink;
+    width: 100px;
+  }
+  .wordpress {
+    @include skill-bar;
+    border-right: 50px solid $pink;
+    width: 150px;
+  }
+  .javascript {
+    @include skill-bar;
+    border-right: 100px solid $pink;
+    width: 100px;
+  }
+  .jQuery {
+    @include skill-bar;
+    border-right: 100px solid $pink;
+    width: 100px;
+  }
+  b {
+    color: $pink;
+  }
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    article {
+      padding-bottom: 50px;
+      width: 100%;
+    }
+    p {
+      text-align: justify;
+    }
+    img {
+      border: 10px solid $pink;
+      border-radius: 10px;
+      width: 100%;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    a,
+    a:link,
+    a:visited {
+      color: black;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    a:hover {
+      border-bottom: 2px solid $sea-green;
+    }
+  }
+}
+@media (min-width: 768px) {
+  /* About Page */
+  #about {
+    .about-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      text-align: center;
+      article {
+        padding-bottom: 50px;
+        width: 80%;
+      }
+      img {
+        border: 10px solid $pink;
+        border-radius: 10px;
+        width: 80%;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        display: block;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+/* Mixins */
+@mixin transition {
+    transition: 1s background-color, .5s color;
+  }
+  @mixin opacity-transition {
+    transition: .5s opacity;
+  }
