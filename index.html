@@ -44,40 +44,51 @@
       </div>
     </section>
 
-    <section id="my-work">
+    <section id="my-work" onload="autoTabs()">
       <div class="content-wrapper">
         <h1>My <span>Work</span></h1>
-          <div class="work-container">
-            <article>
-              <a href="http://accelerate-marketing.studioemery.com/" target="_blank"><img src="./img/accelerate.png" alt="Accelerate Marketing Website Screenshot" /></a>
-            </article>
-            <article>
-              <h2>Accelerate</h2>
-              <h3>WordPress, HTML5, CSS3, PHP</h3>
-              <hr>
-              <p>This project was focused on building a responsive WordPress theme for a marketing company. I loved the process of taking their pre-existing blog, including all of its content and media, and turning it into a WordPress theme. This project features lots of customization features that allow the client to update the website as needed by utilizing plugins and custom post types.</p>
-              <p><a href="http://github.com/emmy-html/accelerate-theme" target="_blank">View Repository</a></p>
-            </article>
-            <article>
-              <a href="https://emmy-html.github.io/unplugged-retreat/" target="_blank"><img src="./img/unplugged.png" alt="Unplugged Retreat Website Screenshot" /></a>
-            </article>
-            <article>
-              <h2>Unplugged Retreat</h2>
-              <h3>HTML5, CSS3, Git</h3>
-              <hr>
-              <p>For this project, I was faced with the task of creating a 3 page website for a retreat for tech teams in need of a team building break. It gave me a deeper understanding of how to link multiple pages to one website, as well as having CSS that can easily be reused and/or lightly modified among different website pages. I enjoyed working with flexbox features to create responsive layouts during this project.</p>
-              <p><a href="https://github.com/emmy-html/unplugged-retreat" target="_blank">View Repository</a></p>
-            </article>
-            <article>
-              <a href="https://emmy-html.github.io/lolcat-clock/" target="_blank"><img src="./img/lolcat.png" alt="LOLCAT Screenshot" /></a>
-            </article>
-            <article>
-              <h2>LOLCAT Clock</h2>
-              <h3>HTML5, CSS3, JavaScript, Git</h3>
-              <hr>
-              <p>The LOLCAT Clock Project gave me a variety of tasks to translate into JavaScript. I had to create a clock that displayed the time, while also displaying a different message and image depending on the time of day. By breaking these needs down into pseudocode, I was able to write the appropriate JavaScript functions to bring it all together; then finally connect it to the HTML and CSS that was provided to me.</p>
-              <p><a href="https://github.com/emmy-html/lolcat-clock" target="_blank">View Repository</a></p>
-            </article>
+        <div class="project-container">
+        <!-- Tab links -->
+          <div class="tab">
+            <button class="tab-links" id="default" onclick="openType(event, 'project-one')">Accelerate Marketing</button>
+            <button class="tab-links" onclick="openType(event, 'project-two')">Unplugged Retreat</button>
+            <button class="tab-links" onclick="openType(event, 'project-three')">LOLCat Clock</button>
+          </div>
+        <!-- Tab content -->
+          <aside class="tab-content-container">
+            <div id="project-one" class="tab-content">
+              <article>
+                <a href="http://accelerate-marketing.studioemery.com/" target="_blank" class="image"><img src="./img/accelerate.png" alt="Accelerate Marketing Website Screenshot" /></a>
+                <h2>Accelerate Marketing</h2>
+                <h3>WordPress, HTML5, CSS3, PHP</h3>
+                <hr>
+                <p>This project was focused on building a responsive WordPress theme for a marketing company. I loved the process of taking their pre-existing blog, including all of its content and media, and turning it into a WordPress theme. This project features lots of customization features that allow the client to update the website as needed by utilizing plugins and custom post types.</p>
+                <p><a href="http://github.com/emmy-html/accelerate-theme" target="_blank">View Repository</a></p>
+              </article>
+            </div>
+
+            <div id="project-two" class="tab-content">
+              <article>
+                <a href="https://emmy-html.github.io/unplugged-retreat/" target="_blank" class="image"><img src="./img/unplugged.png" alt="Unplugged Retreat Website Screenshot" /></a>
+                <h2>Unplugged Retreat</h2>
+                <h3>HTML5, CSS3, Git</h3>
+                <hr>
+                <p>For this project, I was faced with the task of creating a 3 page website for a retreat for tech teams in need of a team building break. It gave me a deeper understanding of how to link multiple pages to one website, as well as having CSS that can easily be reused and/or lightly modified among different website pages. I enjoyed working with flexbox features to create responsive layouts during this project.</p>
+                <p><a href="https://github.com/emmy-html/unplugged-retreat" target="_blank">View Repository</a></p>
+              </article>
+            </div>
+            
+            <div id="project-three" class="tab-content">
+              <article>
+                <a href="https://emmy-html.github.io/lolcat-clock/" target="_blank" class="image"><img src="./img/lolcat.png" alt="LOLCAT Screenshot" /></a>
+                <h2>LOLCAT Clock</h2>
+                <h3>HTML5, CSS3, JavaScript, Git</h3>
+                <hr>
+                <p>The LOLCAT Clock Project gave me a variety of tasks to translate into JavaScript. I had to create a clock that displayed the time, while also displaying a different message and image depending on the time of day. By breaking these needs down into pseudocode, I was able to write the appropriate JavaScript functions to bring it all together; then finally connect it to the HTML and CSS that was provided to me.</p>
+                <p><a href="https://github.com/emmy-html/lolcat-clock" target="_blank">View Repository</a></p>
+              </article>
+            </div>
+          </aside>
         </div>
       </div>
     </section>
@@ -124,7 +135,6 @@
         </div>
     </div>
   </footer>
-
   <script src="js/main.js"></script>
 </body>
 </html>
