@@ -44,27 +44,30 @@
       </div>
     </section>
 
-    <section id="my-work">
+    <section id="my-work" onload="autoTabs()">
       <div class="content-wrapper">
         <h1>My <span>Work</span></h1>
+        <div class="project-container">
         <!-- Tab links -->
-        <div class="tab">
-          <button class="tab-links" onclick="openCity(event, 'html-projects')" id="default-tab">HTML & CSS</button>
-          <button class="tab-links" onclick="openCity(event, 'js-projects')">JavaScript</button>
-          <button class="tab-links" onclick="openCity(event, 'wp-projects')">WordPress</button>
-        </div>
+          <div class="tab">
+            <button class="tab-links" id="default" onclick="openType(event, 'project-one')">Accelerate Marketing</button>
+            <button class="tab-links" onclick="openType(event, 'project-two')">Unplugged Retreat</button>
+            <button class="tab-links" onclick="openType(event, 'project-three')">LOLCat Clock</button>
+          </div>
         <!-- Tab content -->
-        <div id="html-projects" class="tab-content">
-          <h3>HTML & CSS Projects</h3>
-          <p>Slideshow of my projects</p>
-        </div>
-        <div id="js-projects" class="tab-content">
-          <h3>JavaScript Projects</h3>
-          <p>Slideshow of my projects</p>
-        </div>
-        <div id="wp-projects" class="tab-content">
-          <h3>WordPress Projects</h3>
-          <p>Slidwshow of my projects</p>
+          <aside class="tab-content-container">
+            <div id="project-one" class="tab-content">
+              <h3>Accelerate Marketing</h3>
+            </div>
+
+            <div id="project-two" class="tab-content">
+              <h3>Unplugged Retreat</h3>
+            </div>
+            
+            <div id="project-three" class="tab-content">
+              <h3>LOLCat Clock</h3>
+            </div>
+          </aside>
         </div>
         <br><Br>
           <div class="work-container">

@@ -78,6 +78,7 @@ textarea {
   padding: 0.2em 0; }
 
 /* SASS Variables */
+/* Mixins */
 /* Universal Styles */
 html {
   margin: 0;
@@ -88,7 +89,7 @@ body {
   font-size: 16px; }
 
 .content-wrapper {
-  margin: 0px 80px; }
+  margin: 0px 30px; }
 
 h1 {
   font-family: "Montserrat", sans-serif;
@@ -183,6 +184,8 @@ header {
     border-bottom: 2px solid #ff8581;
     color: white; }
   #hero p {
+    min-width: 90%;
+    max-width: 100%;
     text-align: left; }
 
 /* My Work */
@@ -190,29 +193,49 @@ header {
 /* The Tab */
 .tab {
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1; }
+  border: none;
+  background-color: #27746b; }
+
+/*The button container */
+.tab-content-container {
+  display: flex;
+  width: 100%; }
 
 /* The buttons */
 .tab button {
   background-color: inherit;
-  float: left;
   border: none;
+  color: white;
+  font-weight: 700;
+  display: block;
+  font-family: "Montserrat", sans-serif;
   outline: none;
+  width: 100%;
   cursor: pointer;
   padding: 14px 16px;
-  transition: 0.3s; }
+  text-transform: lowercase;
+  transition: 1s background-color, 1s color; }
   .tab button:hover {
-    background-color: #ddd; }
+    background-color: #ff8581; }
   .tab button.active {
-    background: red; }
+    background: white;
+    color: #27746b; }
+
+/* Project container */
+.project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
 
 /* Content inside the tab */
 .tab-content {
+  border: 1px solid #27746b;
   display: none;
   padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none; }
+  height: 400px;
+  width: 100%; }
+  .tab-content h3 {
+    text-align: center; }
 
 #my-work {
   background: white; }
@@ -501,7 +524,7 @@ footer i:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0px; }
+    padding: 20px 60px; }
 
   nav ul li {
     display: inline-block;
@@ -509,8 +532,8 @@ footer i:hover {
     padding-left: 10px; }
 
   /* Hero */
-  #hero p {
-    width: 60%; }
+  #hero .content-wrapper {
+    margin: 0px 80px; }
 
   /* Services */
   #services .services-content {
