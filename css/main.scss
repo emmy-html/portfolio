@@ -111,7 +111,10 @@
   $semi-bold: 600;
 /* Mixins */
 @mixin transition {
-  transition: 1s background-color, 1s color;
+  transition: 1s background-color, .5s color;
+}
+@mixin opacity-transition {
+  transition: .5s opacity;
 }
   /* Universal Styles */
   html {
@@ -154,9 +157,9 @@
     text-transform: uppercase;
   }
   .white-button:hover {
+    @include transition;
     background: none;
     color: white;
-    transition: 1s background, color;
   }
   .pink-button {
     background: $pink;
@@ -168,10 +171,10 @@
     text-transform: uppercase;
   }
   .pink-button:hover {
+    @include transition;
     background: white;
     border: 2px solid $pink;
     color: $pink;
-    transition: 1s background, color;
   }
   /* Header */
   header {
@@ -180,8 +183,8 @@
       color: white;
     }
     i:hover {
+      @include transition;
       color: $pink;
-      transition: 1s color;
     }
     .content-wrapper {
     display: flex;
@@ -216,7 +219,11 @@
     color: white;
     .content-wrapper {
       padding: 50px 0px;
-      width: 40%;
+      p {
+        text-align: left;
+        min-width: 58%;
+        max-width: 60%;
+      }
     }
     h1 {
       line-height: 100%;
@@ -231,69 +238,13 @@
       border-bottom: $pink-border;
       color: white;
     }
-    p {
-      min-width: 90%;
-      max-width: 100%;
-      text-align: left;
-    }
   }
   
   /* My Work */
-   /* Tab Feature */
-    /* The Tab */
-    .tab {
-      overflow: hidden;
-      border: none;
-      background-color: $sea-green;
-    }
-    /*The button container */ 
-    .tab-content-container {
-      display: flex;
-      width: 100%;
-    }
-    /* The buttons */
-    .tab button {
-      background-color: inherit;
-      border: none;
-      color: white;
-      font-weight: $bold;
-      display: block;
-      font-family: $heading-font;
-      outline: none;
-      width: 100%;
-      cursor: pointer;
-      padding: 14px 16px;
-      text-transform: lowercase;
-      @include transition;
-      &:hover {
-        background-color: $pink;
-      }
-      &.active {
-        background: white;
-        color: $sea-green;
-      }
-    }
-    /* Project container */ 
-    .project-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    /* Content inside the tab */ 
-    .tab-content {
-      border: 1px solid $sea-green;
-      display: none;
-      padding: 6px 12px;
-      h3 {
-        text-align: center;
-      }
-      height: 400px;
-      width: 100%;
-    }
   #my-work {
     background: white;
     .content-wrapper {
-      padding-top: 50px;
+      padding: 50px 0px;
     }
     h1 {
       padding-bottom: 50px;
@@ -307,23 +258,65 @@
       margin: 0 auto;
       width: 200px;
     }
-    .work-container {
+   /* Tab Feature */
+    /* My Work container */ 
+    .project-container {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      text-align: center;
-      article {
-        padding-bottom: 50px;
-        width: 100%;
+      justify-content: center;
+    }
+    /* The Tab */
+    .tab {
+      overflow: hidden;
+      border: none;
+      background-color: white;
+    }
+    /* The buttons */
+    .tab button {
+      background-color: white;
+      border: none;
+      border-radius: 10px;
+      color: $sea-green;
+      font-weight: $bold;
+      display: block;
+      font-family: $heading-font;
+      outline: none;
+      width: 100%;
+      cursor: pointer;
+      padding: 14px 16px;
+      text-transform: lowercase;
+      @include transition;
+      &:hover {
+        background-color: $pink;
+        color: white;
       }
-      p {
-        text-align: justify;
+      &.active {
+        background: $sea-green;
+        color: white;
+        &:hover {
+          background: $pink;
+        }
       }
+    }
+    /*The button container */ 
+    .tab-content-container {
+      display: flex;
+      width: 100%;
+    }
+    /* Content inside the tab */ 
+    .tab-content {
+      display: none;
+      padding: 30px 0px;
+      height: 50%;
+      width: 100%;
+      overflow: scroll;
       img {
         border-radius: 10px;
         width: 100%;
+      }
+      h2, h3 {
+        line-height: 90%;
+        text-align: center;
       }
       a:link,
       a:visited {
@@ -333,6 +326,14 @@
       }
       a:hover {
         border-bottom: 2px solid $sea-green;
+      }
+      a:hover.image {
+        border-bottom: none;
+        opacity: 0.75;
+        @include opacity-transition;
+      }
+      p {
+        text-align: justify;
       }
     }
   }
@@ -393,7 +394,7 @@
     }
     i:hover {
       color: black;
-      transition: 2s color;
+      @include transition;
     }
   }
   
@@ -654,8 +655,53 @@
     #hero {
       .content-wrapper {
         margin: 0px 80px;
+        p {
+          min-width: 34%;
+          max-width: 35%;
+        }
       }
     }
+    /* My Work */
+    #my-work {
+      .project-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: row;
+        .tab {
+          min-width: 30%;
+          max-width: 30%;
+          height: 10%;
+        }
+        .tab-content-container {
+          width: 60%;
+          padding: 0px;
+
+        .tab-content {
+        padding: 0;
+        article {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          img {
+            width: 70%;
+          }
+          h2, h3 {
+            line-height: 1%;
+          }
+          h2 {
+            padding-top: 25px;
+          }
+          h3 {
+            margin-bottom: 20px;
+          }
+        }
+        }
+      }
+    }
+  }
     /* Services */
     #services {
       .services-content {
@@ -800,46 +846,15 @@
       margin: 0px 120px;
     }
     /* Hero */
-    #hero p {
-      width: 60%;
-    }
-    /* My Work */
-    #my-work {
-      .work-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        text-align: center;
-        article {
-          padding-bottom: 100px;
-          width: 45%;
-        }
-        article:nth-child(1) {
-          order: 2;
-        }
-        article:nth-child(2) {
-          order: 1;
-        }
-        article:nth-child(3) {
-          order: 2;
-        }
-        article:nth-child(4) {
-          order: 3;
-        }
-        article:nth-child(5) {
-          order: 6;
-        }
-        article:nth-child(6) {
-          order: 5;
-        }
-        article:nth-child(7) {
-          order: 6;
-        }
-        article:nth-child(8) {
-          order: 7;
-        }
+    #hero .content-wrapper {
+      h1, h2, h3, p {
+      padding: 0px 100px;
       }
+      p {
+      min-width: 23%;
+      max-width: 24%;
     }
+  }
     /* Footer */
     footer {
       width: 50%;

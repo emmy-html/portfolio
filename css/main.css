@@ -120,9 +120,9 @@ span {
   text-transform: uppercase; }
 
 .white-button:hover {
+  transition: 1s background-color, .5s color;
   background: none;
-  color: white;
-  transition: 1s background, color; }
+  color: white; }
 
 .pink-button {
   background: #ff8581;
@@ -134,10 +134,10 @@ span {
   text-transform: uppercase; }
 
 .pink-button:hover {
+  transition: 1s background-color, .5s color;
   background: white;
   border: 2px solid #ff8581;
-  color: #ff8581;
-  transition: 1s background, color; }
+  color: #ff8581; }
 
 /* Header */
 header {
@@ -145,8 +145,8 @@ header {
   header .logo i {
     color: white; }
   header i:hover {
-    color: #ff8581;
-    transition: 1s color; }
+    transition: 1s background-color, .5s color;
+    color: #ff8581; }
   header .content-wrapper {
     display: flex;
     justify-content: space-between;
@@ -172,8 +172,11 @@ header {
   background-size: cover;
   color: white; }
   #hero .content-wrapper {
-    padding: 50px 0px;
-    width: 40%; }
+    padding: 50px 0px; }
+    #hero .content-wrapper p {
+      text-align: left;
+      min-width: 58%;
+      max-width: 60%; }
   #hero h1 {
     line-height: 100%; }
   #hero h3 {
@@ -183,64 +186,18 @@ header {
   #hero h2 span {
     border-bottom: 2px solid #ff8581;
     color: white; }
-  #hero p {
-    min-width: 90%;
-    max-width: 100%;
-    text-align: left; }
 
 /* My Work */
-/* Tab Feature */
-/* The Tab */
-.tab {
-  overflow: hidden;
-  border: none;
-  background-color: #27746b; }
-
-/*The button container */
-.tab-content-container {
-  display: flex;
-  width: 100%; }
-
-/* The buttons */
-.tab button {
-  background-color: inherit;
-  border: none;
-  color: white;
-  font-weight: 700;
-  display: block;
-  font-family: "Montserrat", sans-serif;
-  outline: none;
-  width: 100%;
-  cursor: pointer;
-  padding: 14px 16px;
-  text-transform: lowercase;
-  transition: 1s background-color, 1s color; }
-  .tab button:hover {
-    background-color: #ff8581; }
-  .tab button.active {
-    background: white;
-    color: #27746b; }
-
-/* Project container */
-.project-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-
-/* Content inside the tab */
-.tab-content {
-  border: 1px solid #27746b;
-  display: none;
-  padding: 6px 12px;
-  height: 400px;
-  width: 100%; }
-  .tab-content h3 {
-    text-align: center; }
-
 #my-work {
-  background: white; }
+  background: white;
+  /* Tab Feature */
+  /* My Work container */
+  /* The Tab */
+  /* The buttons */
+  /*The button container */
+  /* Content inside the tab */ }
   #my-work .content-wrapper {
-    padding-top: 50px; }
+    padding: 50px 0px; }
   #my-work h1 {
     padding-bottom: 50px;
     text-align: center; }
@@ -250,28 +207,64 @@ header {
     border-top: 2px solid #ff8581;
     margin: 0 auto;
     width: 200px; }
-  #my-work .work-container {
+  #my-work .project-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    text-align: center; }
-    #my-work .work-container article {
-      padding-bottom: 50px;
-      width: 100%; }
-    #my-work .work-container p {
-      text-align: justify; }
-    #my-work .work-container img {
+    justify-content: center; }
+  #my-work .tab {
+    overflow: hidden;
+    border: none;
+    background-color: white; }
+  #my-work .tab button {
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    color: #27746b;
+    font-weight: 700;
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    outline: none;
+    width: 100%;
+    cursor: pointer;
+    padding: 14px 16px;
+    text-transform: lowercase;
+    transition: 1s background-color, .5s color; }
+    #my-work .tab button:hover {
+      background-color: #ff8581;
+      color: white; }
+    #my-work .tab button.active {
+      background: #27746b;
+      color: white; }
+      #my-work .tab button.active:hover {
+        background: #ff8581; }
+  #my-work .tab-content-container {
+    display: flex;
+    width: 100%; }
+  #my-work .tab-content {
+    display: none;
+    padding: 30px 0px;
+    height: 50%;
+    width: 100%;
+    overflow: scroll; }
+    #my-work .tab-content img {
       border-radius: 10px;
       width: 100%; }
-    #my-work .work-container a:link,
-    #my-work .work-container a:visited {
+    #my-work .tab-content h2, #my-work .tab-content h3 {
+      line-height: 90%;
+      text-align: center; }
+    #my-work .tab-content a:link,
+    #my-work .tab-content a:visited {
       color: black;
       font-weight: 600;
       text-decoration: none; }
-    #my-work .work-container a:hover {
+    #my-work .tab-content a:hover {
       border-bottom: 2px solid #27746b; }
+    #my-work .tab-content a:hover.image {
+      border-bottom: none;
+      opacity: 0.75;
+      transition: .5s opacity; }
+    #my-work .tab-content p {
+      text-align: justify; }
 
 /* Services */
 #services {
@@ -317,7 +310,7 @@ footer i {
   padding: 0px 10px; }
 footer i:hover {
   color: black;
-  transition: 2s color; }
+  transition: 1s background-color, .5s color; }
 
 /* About Page */
 #about {
@@ -534,6 +527,39 @@ footer i:hover {
   /* Hero */
   #hero .content-wrapper {
     margin: 0px 80px; }
+    #hero .content-wrapper p {
+      min-width: 34%;
+      max-width: 35%; }
+
+  /* My Work */
+  #my-work .project-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row; }
+    #my-work .project-container .tab {
+      min-width: 30%;
+      max-width: 30%;
+      height: 10%; }
+    #my-work .project-container .tab-content-container {
+      width: 60%;
+      padding: 0px; }
+      #my-work .project-container .tab-content-container .tab-content {
+        padding: 0; }
+        #my-work .project-container .tab-content-container .tab-content article {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center; }
+          #my-work .project-container .tab-content-container .tab-content article img {
+            width: 70%; }
+          #my-work .project-container .tab-content-container .tab-content article h2, #my-work .project-container .tab-content-container .tab-content article h3 {
+            line-height: 1%; }
+          #my-work .project-container .tab-content-container .tab-content article h2 {
+            padding-top: 25px; }
+          #my-work .project-container .tab-content-container .tab-content article h3 {
+            margin-bottom: 20px; }
 
   /* Services */
   #services .services-content {
@@ -641,34 +667,11 @@ footer i:hover {
     margin: 0px 120px; }
 
   /* Hero */
-  #hero p {
-    width: 60%; }
-
-  /* My Work */
-  #my-work .work-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center; }
-    #my-work .work-container article {
-      padding-bottom: 100px;
-      width: 45%; }
-    #my-work .work-container article:nth-child(1) {
-      order: 2; }
-    #my-work .work-container article:nth-child(2) {
-      order: 1; }
-    #my-work .work-container article:nth-child(3) {
-      order: 2; }
-    #my-work .work-container article:nth-child(4) {
-      order: 3; }
-    #my-work .work-container article:nth-child(5) {
-      order: 6; }
-    #my-work .work-container article:nth-child(6) {
-      order: 5; }
-    #my-work .work-container article:nth-child(7) {
-      order: 6; }
-    #my-work .work-container article:nth-child(8) {
-      order: 7; }
+  #hero .content-wrapper h1, #hero .content-wrapper h2, #hero .content-wrapper h3, #hero .content-wrapper p {
+    padding: 0px 100px; }
+  #hero .content-wrapper p {
+    min-width: 23%;
+    max-width: 24%; }
 
   /* Footer */
   footer {
